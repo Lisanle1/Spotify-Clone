@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export default function Login() {
   const handleClick = async () => {
-    const client_id =process.env.REACT_APP_CLIENT_ID;
-    const redirect_uri = "http://localhost:3000/";
+    const client_id = process.env.REACT_APP_CLIENT_ID;
+    const redirect_uri = process.env.REACT_APP_REDIRECT_URI;
     const api_uri = "https://accounts.spotify.com/authorize";
     const scope = [
       "user-read-private", 
